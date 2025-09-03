@@ -4,7 +4,7 @@ refer 0 参照する、言及する、(人を)紹介する
 available 2 入手できる、利用できる、購入できる、手が空いている
 department 1 部門、売り場
 conference 1 会議
-according to 4 ～によると、～に従って
+according 4 ～によると、～に従って
 likely 3 おそらく 2 ～しそうだ
 offer 0 申し出る、提供する 1 申し出、オファー
 equipment 1 機器、装備
