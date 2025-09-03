@@ -45,6 +45,7 @@ function createSection(){
 
             mean.appendChild(_part);
             mean.appendChild(_mean);
+            mean.appendChild(" ");
         }
 
         loop.appendChild(clone); 
