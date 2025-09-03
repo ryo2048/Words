@@ -87,29 +87,32 @@
     justify-content: center;
 }
 
-p {
+.numtext {
     font-family: Arial;
     font-weight: bold;
-}
-
-.numtext {
     color: white;
     font-size: 12px;
 }
 
 .wordtext {
+    font-family: Arial;
+    font-weight: bold;
     color: black;
     margin-left: 10px;
     white-space: nowrap;
 }
 
 .meantext {
+    font-family: Arial;
+    font-weight: bold;
     color: rgb(250, 150, 90);
     margin-left: 10px;
     white-space: nowrap;
 }
 
 .parttext {
+    font-family: Arial;
+    font-weight: bold;
     color: black;
     background: rgb(215, 215, 215);
 }
