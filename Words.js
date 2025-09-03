@@ -63,17 +63,20 @@ function inputData(){
         means = [];
 
         lines.forEach(line => {
-        const tokens = line.match(/"[^"]+"|\d+/g);
-        const word = tokens[0].replace(/"/g, "");
-        words.push(word);
+            // 空白で区切る（タブやスペース両対応）
+            const tokens = line.trim().split(/\s+/);
+            if (tokens.length < 3) return; // 最低でも word + 数字 + 意味 が必要
 
-        const meanObj = {};
-        for(let i=1; i<tokens.length; i+=2){
-            const partIndex = parseInt(tokens[i]);
-            const meanText = tokens[i+1].replace(/"/g, "");
-            meanObj[meanText] = partIndex;
-        }
-        means.push(meanObj);
+            const word = tokens[0];
+            words.push(word);
+
+            const meanObj = {};
+            for(let i=1; i<tokens.length; i+=2){
+                const partIndex = parseInt(tokens[i]);
+                const meanText = tokens[i+1];
+                meanObj[meanText] = partIndex;
+            }
+            means.push(meanObj);
         });
 
         createSection();
