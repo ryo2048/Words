@@ -56,6 +56,10 @@ function createSection(){
             mean.querySelectorAll("._mean").forEach(m => {
                 m.style.display = (m.style.display === "none") ? "inline" : "none";
             });
+
+            requestAnimationFrame( () => {
+                widthAdjust(mean);
+            });
         });
 
         loop.appendChild(clone); 
