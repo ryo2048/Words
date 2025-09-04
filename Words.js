@@ -18,11 +18,6 @@ function widthAdjust(text, max=40, min=10){
     }
 }
 
-function toggle(){
-    tog = !tog;
-    tog ? mean.style.display="block" : mean.style.display="none";
-}
-
 function createSection(){
     let i, j;
     
