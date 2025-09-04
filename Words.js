@@ -42,7 +42,7 @@ function createSection(){
             _part.textContent = parts[partNum];
 
             const _mean = document.createElement("span");
-            _mean.classList.add("meantext");
+            _mean.classList.add("_mean");
             _mean.textContent = keys[j];
             _mean.style.display = "none";
 
