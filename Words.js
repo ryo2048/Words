@@ -5,6 +5,8 @@ let words = [];
 const parts = ["動", "名", "形", "副", "前", "接"];
 let means = [];
 
+let tog = false;
+
 function widthAdjust(text, max=40, min=10){
     let size = max;
     let parent = text.parentElement;
@@ -14,6 +16,11 @@ function widthAdjust(text, max=40, min=10){
         size--;
         text.style.fontSize = size + "px";
     }
+}
+
+function toggle(){
+    tog = !tog;
+    tog ? mean.style.display="block" : mean.style.display="none";
 }
 
 function createSection(){
@@ -42,11 +49,19 @@ function createSection(){
             const _mean = document.createElement("span");
             _mean.classList.add("meantext");
             _mean.textContent = keys[j];
+            _mean.style.display = "none";
 
             mean.appendChild(_part);
             mean.appendChild(_mean);
             mean.appendChild(document.createTextNode(" "));
         }
+
+        const meanButton = clone.querySelector(".mean");
+        meanButton.addEventListener("click", () => {
+            mean.querySelectorAll("._mean").forEach(m => {
+                m.style.display = (m.style.display === "none") ? "inline" : "none";
+            });
+        });
 
         loop.appendChild(clone); 
 
