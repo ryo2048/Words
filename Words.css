@@ -98,6 +98,7 @@
     font-family: Arial;
     font-weight: bold;
     color: black;
+    font-size: 40px;
     margin-left: 10px;
     white-space: nowrap;
 }
@@ -106,6 +107,7 @@
     font-family: Arial;
     font-weight: bold;
     color: rgb(250, 150, 90);
+    font-size: 40px;
     margin-left: 10px;
     white-space: nowrap;
 }
