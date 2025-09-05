@@ -99,6 +99,7 @@
     font-weight: bold;
     color: black;
     font-size: 40px;
+    transform-origin: left center;
     margin-left: 10px;
     white-space: nowrap;
 }
@@ -108,7 +109,7 @@
     font-weight: bold;
     color: rgb(250, 150, 90);
     font-size: 40px;
-    margin-left: 10px;
+    transform-origin: left center;
     white-space: nowrap;
 }
 
@@ -117,5 +118,7 @@
     font-weight: bold;
     color: black;
     font-size: 40px;
+    transform-origin: left center;
+    margin-left: 10px;
     background: rgb(215, 215, 215);
 }
