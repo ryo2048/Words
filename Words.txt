@@ -8,3 +8,13 @@ according 4 ～によると、～に従って
 likely 3 おそらく 2 ～しそうだ
 offer 0 申し出る、提供する 1 申し出、オファー
 equipment 1 機器、装備
+lately 3 最近、この頃
+profession 1 専門的職業
+supervisor 1 上司、責任者
+ensure 0 保証する、請け合う
+submission 1 提出物、提出
+notify 0 知らせる
+definitely 3 間違いなく、絶対に
+eligible 2 資格がある
+paperwork 1 書類、書類作業
+complimentary 2 無料の
