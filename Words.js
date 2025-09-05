@@ -7,14 +7,14 @@ let means = [];
 
 let tog = false;
 
-function widthAdjust(text, max=40, min=10){
+function widthAdjust(text, max=1.0, min=0.1){
     let size = max;
     let parent = text.parentElement;
 
-    text.style.fontSize = size + "px";
+    text.style.transform = "scaleX(" + size + ")";
     while(text.scrollWidth > parent.clientWidth-10 && size > min){
-        size--;
-        text.style.fontSize = size + "px";
+        size -= 0.01;
+        text.style.transform = "scaleX(" + size + ")";
     }
 }
 
