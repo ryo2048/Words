@@ -12,10 +12,11 @@ function widthAdjust(text, max=1.0, min=0.1){
     let parent = text.parentElement;
 
     text.style.transform = "scaleX(" + size + ")";
-    while(text.getBoundingClientRect().width > parent.clientWidth-10 && size > min){
-        size -= 0.01;
-        text.style.transform = "scaleX(" + size + ")";
-    }
+    const textWidth = text.getBoundingClientRect().width;
+    
+    while(textWidth*size > parent.clientWidth-10 && size > min) size -= 0.01;
+    
+    text.style.transform = "scaleX(" + size + ")";
 }
 
 function createSection(){
