@@ -19,10 +19,10 @@ function widthAdjust(text, max=1.0, min=0.1){
     text.style.transform = "scaleX(" + size + ")";
 }
 
-function createSection(){
+function createSection(start){
     let i, j;
     
-    for(i=0; i<words.length; i++){
+    for(i=start; i<start+10; i++){
         const clone = template.content.cloneNode(true);
         
         clone.querySelector(".numtext").textContent = i+1;
@@ -95,7 +95,8 @@ function inputData(){
             means.push(meanObj);
         });
 
-        createSection();
+        createSection(3);
+        create
     })
 }
 
