@@ -7,38 +7,38 @@
         <script src="Words.js" defer></script>
     </head>
     <body>
+        <div class="background"></div>
         <div id="level_loop"></div>
-        <div id="section_loop"></div>
 
         <template id="level_template">
             <div class="level">
                 <div class="leveltext"></div>
             </div>
-        </template>
-        <template id="section_template">
-            <div class="section">
-                <div class="side">
-                    <div class="border">
-                        <div class="number">
-                            <div class="numtext"></div>
+            <template id="section_template">
+                <div class="section">
+                    <div class="side">
+                        <div class="border">
+                            <div class="number">
+                                <div class="numtext"></div>
+                            </div>
+                            <div class="blank_1">
+                                <div class="blank_2"></div>
+                                <div class="blank_2"></div>
+                            </div>
                         </div>
-                        <div class="blank_1">
-                            <div class="blank_2"></div>
-                            <div class="blank_2"></div>
+                        <div class="border">
+                            <div class="word">
+                                <div class="wordtext"></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="border">
-                        <div class="word">
-                            <div class="wordtext"></div>
+                        <div class="border">
+                            <button class="mean">
+                                <div class="meantext"></div>
+                            </button>
                         </div>
-                    </div>
-                    <div class="border">
-                        <button class="mean">
-                            <div class="meantext"></div>
-                        </button>
                     </div>
                 </div>
-            </div>
+            </template>
         </template>
     </body>
 </html>
