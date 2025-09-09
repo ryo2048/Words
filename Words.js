@@ -82,7 +82,7 @@ function createSection(start, stop){
 }
 
 function inputData(){
-    fetch("Words.txt")
+    return fetch("Words.txt")
     .then(res => res.text())
     .then(data => {
         const lines = data.trim().split("\n");
