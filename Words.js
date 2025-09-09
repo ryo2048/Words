@@ -1,11 +1,8 @@
-const loop = document.getElementById("loop");
-const template = document.getElementById("my_template");
-
 let words = [];
 const parts = ["動", "名", "形", "副", "前", "接"];
 let means = [];
 
-let tog = false;
+const list = document.getElementById("list");
 
 function widthAdjust(text, max=1.0, min=0.1){
     let size = max;
@@ -19,13 +16,27 @@ function widthAdjust(text, max=1.0, min=0.1){
     text.style.transform = "scaleX(" + size + ")";
 }
 
-function createSection(start){
+function createLevel(scoreLevel){
+    const levelTemplate = document.getElementById("level_template");
+
+    const clone = levelTemplate.content.cloneNode(true);
+
+    const level = clone.querySelector(".leveltext");
+    level.textContent = "Score " + scoreLevel + " Level";
+
+    list.appendChild(clone);
+}
+
+function createSection(start, stop){
+    const sectionTemplate = document.getElementById("section_template");
+    
     let i, j;
     
-    for(i=start; i<start+10; i++){
-        const clone = template.content.cloneNode(true);
-        
-        clone.querySelector(".numtext").textContent = i+1;
+    for(i=start; i<stop; i++){
+        const clone = sectionTemplate.content.cloneNode(true);
+
+        const num = clone.querySelector(".numtext");
+        num.textContent = i+1;
 
         const word = clone.querySelector(".wordtext");
         word.textContent = words[i];
@@ -63,7 +74,7 @@ function createSection(start){
             });
         });
 
-        loop.appendChild(clone); 
+        list.appendChild(clone); 
 
         widthAdjust(word);
         widthAdjust(mean);
@@ -94,10 +105,19 @@ function inputData(){
             }
             means.push(meanObj);
         });
-
-        createSection(3);
-        create
     })
 }
 
-inputData();
+inputData().then(() => {
+    createLevel(600);
+    createSection(0, 400);
+    
+    createLevel(730);
+    createSection(400, 700);
+
+    createLevel(850);
+    createSection(700, 900);
+
+    createLevel(990);
+    createSection(900, 1000);
+});
