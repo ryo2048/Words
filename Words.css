@@ -3,8 +3,7 @@ body {
 }
 
 .background {
-    background-color: orange;
-    height: 100vh;
+    background-color: rgb(100, 80, 20);
 }
 
 .level {
