@@ -110,10 +110,10 @@ function inputData(){
 
 inputData().then(() => {
     createLevel(600);
-    createSection(0, 400);
+    createSection(0, 10);
     
     createLevel(730);
-    createSection(400, 700);
+    createSection(10, 20);
 
     createLevel(850);
     createSection(700, 900);
