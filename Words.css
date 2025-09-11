@@ -6,6 +6,10 @@ body {
     background-color: rgb(170, 140, 30);
 }
 
+#list {
+    margin: 0 auto;
+}
+
 .level {
     width: 232.5px;
     height: 30px;
@@ -25,7 +29,6 @@ body {
 .section {
     width: 930px;
     height: 80px;
-    margin: 0 auto;
 }
 
 .side {
