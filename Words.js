@@ -111,12 +111,18 @@ const list = document.getElementById("list");
 inputData().then(() => {
     createLevel(600);
     createSection(0, 5);
+
+    list.appendChild(document.createElement("br"));
     
     createLevel(730);
     createSection(5, 10);
 
+    list.appendChild(document.createElement("br"));
+
     createLevel(850);
     createSection(10, 15);
+
+    list.appendChild(document.createElement("br"));
     
     createLevel(990);
     createSection(15, 20);
