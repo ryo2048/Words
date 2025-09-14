@@ -1,9 +1,3 @@
-let words = [];
-const parts = ["動", "名", "形", "副", "前", "接"];
-let means = [];
-
-const list = document.getElementById("list");
-
 function widthAdjust(text, max=1.0, min=0.1){
     let size = max;
     let parent = text.parentElement;
@@ -108,16 +102,22 @@ function inputData(){
     })
 }
 
+let words = [];
+const parts = ["動", "名", "形", "副", "前", "接"];
+let means = [];
+
+const list = document.getElementById("list");
+
 inputData().then(() => {
     createLevel(600);
-    createSection(0, 10);
+    createSection(0, 5);
     
     createLevel(730);
-    createSection(10, 20);
+    createSection(5, 10);
 
     createLevel(850);
-    createSection(700, 900);
-
+    createSection(10, 15);
+    
     createLevel(990);
-    createSection(900, 1000);
+    createSection(15, 20);
 });
