@@ -1,9 +1,11 @@
 body {
     margin: 0;
+    height: 100%;
 }
 
 .background {
     background-color: rgb(170, 140, 30);
+    min-height: 100vh;
 }
 
 #list {
