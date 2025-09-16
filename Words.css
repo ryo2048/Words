@@ -36,6 +36,14 @@ html, body {
     display: flex;
 }
 
+.white-box {
+    width: 50px;
+    height: 13px;
+    background: white;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
 .section {
     width: 936px;
     height: 80px;
