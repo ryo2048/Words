@@ -18,6 +18,13 @@ function createLevel(scoreLevel){
     const level = clone.querySelector(".leveltext");
     level.textContent = "Score " + scoreLevel + " Level";
 
+    const rail = document.getElementById("rail");
+    const whiteBox = document.querySelector(".white-box");
+
+    for(let i=0; i<10; i++){
+        rail.appendChild(whiteBox);
+    }
+
     list.appendChild(clone);
 }
 
