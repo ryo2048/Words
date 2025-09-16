@@ -13,19 +13,20 @@ function widthAdjust(text, max=1.0, min=0.1){
 function createLevel(scoreLevel){
     const levelTemplate = document.getElementById("level_template");
 
-    const clone = levelTemplate.content.cloneNode(true);
+    const levelClone = levelTemplate.content.cloneNode(true);
 
-    const level = clone.querySelector(".leveltext");
+    const level = levelClone.querySelector(".leveltext");
     level.textContent = "Score " + scoreLevel + " Level";
 
-    const rail = document.getElementById("rail");
+    const rail = levelClone.querySelector("#rail");
     const whiteBox = document.querySelector(".white-box");
 
     for(let i=0; i<10; i++){
-        rail.appendChild(whiteBox);
+        const whiteClone = whiteBox.cloneNode(true);
+        rail.appendChild(whiteClone);
     }
 
-    list.appendChild(clone);
+    list.appendChild(levelClone);
 }
 
 function createSection(start, stop){
