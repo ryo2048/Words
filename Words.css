@@ -9,7 +9,7 @@ html, body {
 }
 
 #list {
-    width: 930px;
+    width: 936px;
     margin: 0 auto;
 }
 
@@ -30,14 +30,14 @@ html, body {
 }
 
 #rail {
-    width: 930px;
-    height: 10px;
-    background: rgb(160, 160, 160);
+    width: 936px;
+    height: 15px;
+    background: rgb(170, 170, 170);
     display: flex;
 }
 
 .section {
-    width: 930px;
+    width: 936px;
     height: 80px;
 }
 
