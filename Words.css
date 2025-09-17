@@ -5,7 +5,7 @@ html, body {
 
 .background {
     background-color: rgb(170, 140, 30);
-    min-height: 100vh;
+    height: 100vh;
 }
 
 #list {
@@ -38,7 +38,7 @@ html, body {
 
 .white-box {
     width: 50px;
-    height: 13px;
+    height: 9px;
     background: white;
     margin-top: 1px;
     margin-bottom: 1px;
