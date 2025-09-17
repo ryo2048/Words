@@ -19,7 +19,6 @@ function createLevel(scoreLevel){
     level.textContent = "Score " + scoreLevel + " Level";
 
     const rail = levelClone.querySelector("#rail");
-    const whiteBox = document.querySelector(".white-box");
 
     for(let i=0; i<18; i++){
         const whiteBox = document.createElement("div");
