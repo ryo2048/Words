@@ -22,9 +22,9 @@ function createLevel(scoreLevel){
     const whiteBox = document.querySelector(".white-box");
 
     for(let i=0; i<10; i++){
-        cconst whiteBox = document.createElement("div");
+        const whiteBox = document.createElement("div");
         whiteBox.classList.add("white-box");
-        rail.appendChild(whiteClone);
+        rail.appendChild(whiteBox);
     }
 
     list.appendChild(levelClone);
