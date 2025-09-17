@@ -21,9 +21,11 @@ function createLevel(scoreLevel){
     const rail = levelClone.querySelector("#rail");
     const whiteBox = document.querySelector(".white-box");
 
-    for(let i=0; i<10; i++){
+    for(let i=0; i<18; i++){
         const whiteBox = document.createElement("div");
         whiteBox.classList.add("white-box");
+        if(i % 2 == 0) whiteBox.style.display = "none";
+            
         rail.appendChild(whiteBox);
     }
 
