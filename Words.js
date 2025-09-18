@@ -14,9 +14,11 @@ function createLevel(scoreLevel, position){
     const levelTemplate = document.getElementById("level_template");
     const levelClone = levelTemplate.content.cloneNode(true);
 
-    const level = levelClone.querySelector(".leveltext");
-    level.textContent = "Score " + scoreLevel + " Level";
+    const level = levelClone.querySelector(".level");
     level.style.left = position * 234 + "px";
+
+    const levelText = levelClone.querySelector(".leveltext");
+    levelText.textContent = "Score " + scoreLevel + " Level";
 
     const rail = levelClone.querySelector("#rail");
 
