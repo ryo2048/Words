@@ -8,6 +8,15 @@ html, body {
     height: 100vh;
 }
 
+.title {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 50px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+    
 #list {
     width: 936px;
     margin: 0 auto;
