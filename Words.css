@@ -38,17 +38,17 @@ html, body {
 
 .white-box {
     width: 50px;
-    height: 9px;
+    height: 11px;
     background: white;
-    margin-top: 3px;
-    margin-bottom: 3px;
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 
 .blank {
     width: 50px;
-    height: 9px;
-    margin-top: 3px;
-    margin-bottom: 3px;
+    height: 11px;
+    margin-top: 2px;
+    margin-bottom: 2px;
     background: rgba(255, 0, 0, 0);
 }
 
