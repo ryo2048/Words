@@ -23,9 +23,12 @@ function createLevel(scoreLevel){
     for(let i=0; i<18; i++){
         const whiteBox = document.createElement("div");
         whiteBox.classList.add("white-box");
-        if(i % 2 == 0) whiteBox.style.display = "none";
-            
+
+        const blank = document.createElement("div");
+        blank.classList.add("blank");
+        
         rail.appendChild(whiteBox);
+        rail.appendChild(blank);
     }
 
     list.appendChild(levelClone);
