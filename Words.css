@@ -31,24 +31,24 @@ html, body {
 
 #rail {
     width: 936px;
-    height: 15px;
+    height: 10px;
     background: rgb(170, 170, 170);
     display: flex;
 }
 
 .white-box {
     width: 50px;
-    height: 11px;
+    height: 8px;
     background: white;
-    margin-top: 2px;
-    margin-bottom: 2px;
+    margin-top: 1px;
+    margin-bottom: 1px;
 }
 
 .blank {
     width: 50px;
-    height: 11px;
-    margin-top: 2px;
-    margin-bottom: 2px;
+    height: 8px;
+    margin-top: 1px;
+    margin-bottom: 1px;
     background: rgba(255, 0, 0, 0);
 }
 
