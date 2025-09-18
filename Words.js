@@ -10,13 +10,13 @@ function widthAdjust(text, max=1.0, min=0.1){
     text.style.transform = "scaleX(" + size + ")";
 }
 
-function createLevel(scoreLevel){
+function createLevel(scoreLevel, position){
     const levelTemplate = document.getElementById("level_template");
-
     const levelClone = levelTemplate.content.cloneNode(true);
 
     const level = levelClone.querySelector(".leveltext");
     level.textContent = "Score " + scoreLevel + " Level";
+    level.style.left = potision * 234 + "px";
 
     const rail = levelClone.querySelector("#rail");
 
@@ -122,21 +122,21 @@ let means = [];
 const list = document.getElementById("list");
 
 inputData().then(() => {
-    createLevel(600);
+    createLevel(600, 0);
     createSection(0, 5);
 
     list.appendChild(document.createElement("br"));
     
-    createLevel(730);
+    createLevel(730, 1);
     createSection(5, 10);
 
     list.appendChild(document.createElement("br"));
 
-    createLevel(850);
+    createLevel(850, 2);
     createSection(10, 15);
 
     list.appendChild(document.createElement("br"));
     
-    createLevel(990);
+    createLevel(990, 3);
     createSection(15, 20);
 });
