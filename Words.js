@@ -16,7 +16,7 @@ function createLevel(scoreLevel, position){
 
     const level = levelClone.querySelector(".leveltext");
     level.textContent = "Score " + scoreLevel + " Level";
-    level.style.left = potision * 234 + "px";
+    level.style.left = position * 234 + "px";
 
     const rail = levelClone.querySelector("#rail");
 
