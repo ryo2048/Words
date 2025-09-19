@@ -11,7 +11,7 @@ html, body {
 .title {
     font-family: Arial;
     font-weight: bold;
-    font-size: 80px;
+    font-size: 75px;
     margin: 40px;
     display: flex;
     justify-content: center;
