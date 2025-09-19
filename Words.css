@@ -5,7 +5,7 @@ html, body {
 
 .background {
     background-color: rgb(170, 140, 30);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .title {
