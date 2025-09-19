@@ -125,20 +125,20 @@ const list = document.getElementById("list");
 
 inputData().then(() => {
     createLevel(600, 0);
-    createSection(0, 5);
+    createSection(0, 400);
 
     list.appendChild(document.createElement("br"));
     
     createLevel(730, 1);
-    createSection(5, 10);
+    createSection(400, 700);
 
     list.appendChild(document.createElement("br"));
 
     createLevel(850, 2);
-    createSection(10, 15);
+    createSection(700, 900);
 
     list.appendChild(document.createElement("br"));
     
     createLevel(990, 3);
-    createSection(15, 20);
+    createSection(900, 1000);
 });
