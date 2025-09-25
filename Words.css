@@ -5,7 +5,62 @@ html, body {
 }
 
 body {
+    padding: 0;
     background-color: rgb(170, 140, 30);
+}
+
+.hamburger {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  cursor: pointer;
+  z-index: 10;
+  transition: transform 0.5s ease;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #333;
+  margin: 5px 0;
+  transition: all 0.5s ease;
+}
+
+/* 回転アニメーション */
+.hamburger.active {
+  transform: rotate(360deg); /* 全体が回転 */
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px); /* バツの左上 */
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0; /* 中央の線を隠す */
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px); /* バツの右下 */
+}
+
+/* メニューのスタイル */
+.menu {
+  position: fixed;
+  top: -100%;
+  right: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #fafad2;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 5;
+  transition: top 0.3s ease;
+}
+
+.menu.open {
+  top: 0;
 }
 
 .title {
