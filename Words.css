@@ -1,22 +1,19 @@
-html, body {
-    margin: 0;
-    height: 100%;
-    
-}
-
 body {
+    height: 100%;
+    font-family: Arial;
+    margin: 0;
     padding: 0;
     background-color: rgb(170, 140, 30);
 }
 
+/* ハンバーガーボタンのスタイル */
 .hamburger {
   position: fixed;
   top: 20px;
   right: 20px;
   width: 30px;
   cursor: pointer;
-  z-index: 10;
-  transition: transform 0.5s ease;
+  z-index: 20;
 }
 
 .hamburger span {
@@ -25,30 +22,26 @@ body {
   width: 100%;
   background-color: #333;
   margin: 5px 0;
-  transition: all 0.5s ease;
+  transition: 0.4s;
 }
 
-/* 回転アニメーション */
-.hamburger.active {
-  transform: rotate(360deg); /* 全体が回転 */
-}
-
+/* バツ印に変化するスタイル */
 .hamburger.active span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px); /* バツの左上 */
+  transform: rotate(45deg) translate(5px, 5px);
 }
 
 .hamburger.active span:nth-child(2) {
-  opacity: 0; /* 中央の線を隠す */
+  opacity: 0;
 }
 
 .hamburger.active span:nth-child(3) {
-  transform: rotate(-45deg) translate(6px, -6px); /* バツの右下 */
+  transform: rotate(-45deg) translate(6px, -6px);
 }
 
 /* メニューのスタイル */
 .menu {
   position: fixed;
-  top: -100%;
+  top: -100%; /* 初期状態でメニューを画面の外に */
   right: 0;
   width: 250px;
   height: 100vh;
@@ -56,11 +49,12 @@ body {
   padding: 20px;
   box-sizing: border-box;
   z-index: 5;
-  transition: top 0.3s ease;
+  transition: top 0.3s ease; /* スライドアニメーション */
 }
 
+/* メニューが表示される時 */
 .menu.open {
-  top: 0;
+  top: 0; /* メニューが表示される位置 */
 }
 
 .title {
