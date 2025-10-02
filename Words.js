@@ -143,9 +143,12 @@ inputData().then(() => {
     createSection(900, 1000);
 });
 
-$(function() {
-  $('.hamburger').click(function() {
-    $(this).toggleClass('active');
-    $('.menu').toggleClass('open');
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.querySelector('.hamburger');
+  const menu = document.querySelector('.menu');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    menu.classList.toggle('open');
   });
 });
