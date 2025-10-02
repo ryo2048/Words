@@ -123,13 +123,6 @@ let means = [];
 
 const list = document.getElementById("list");
 
-$(function() {
-  $('.hamburger').click(function() {
-    $(this).toggleClass('active');
-    $('.menu').toggleClass('open');
-  });
-});
-
 inputData().then(() => {
     createLevel(600, 0);
     createSection(0, 400);
@@ -148,4 +141,11 @@ inputData().then(() => {
     
     createLevel(990, 3);
     createSection(900, 1000);
+});
+
+$(function() {
+  $('.hamburger').click(function() {
+    $(this).toggleClass('active');
+    $('.menu').toggleClass('open');
+  });
 });
